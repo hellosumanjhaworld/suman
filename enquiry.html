@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-	
-	<title>Gallery</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Enquiry</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
@@ -32,10 +33,10 @@
 				<div class="menu-items">
 					<a href="courses.html">Courses</a>
 				</div>
-				<div class="menu-items active">
+				<div class="menu-items">
 					<a href="gallery.html">Gallery</a>
 				</div>
-				<div class="menu-items">
+				<div class="menu-items active">
 					<a href="enquiry.html">Enquiry</a>
 				</div>
 				<div class="menu-items">
@@ -45,7 +46,7 @@
 		</div>
 		<!-- menu container end -->
 		<!-- middle container starts -->
-		<div class="middle-container">
+		<div class="middle-container" style="height: 880px;">
 			<div class="middle-left">
 				<div class="middle-left-items">
 					<a href="index.html">Home</a>
@@ -79,48 +80,93 @@
 					</ul>
 				</div>
 			</div>
-			<div class="middle-right">
+			<div class="middle-right end-height">
 				<div class="page-status">
-					<h1>Gallery:</h1>
-					<h2><i onclick='window.location.href = "index.html" '> Home /</i>Gallery</h2>
+					<h1>Enquiry</h1>
+					<h2><i onclick='window.location.href = "index.html" '> Home /</i>Enquiry</h2>
 				</div>
-				<div class="gallery-content">
-					<div class="gallery-img" title="image1">
-						<img src="gallery_img/1.jpg" width="225" height="170"  alt="gallery" />
-						<div class="gallery-img-title">Title 1</div>
-					</div>
-					<div class="gallery-img" title="image2">
-						<img src="gallery_img/2.jpg" width="225" height="170"  alt="gallery" />
-						<div class="gallery-img-title">Title 2</div>
-					</div>
-					<div class="gallery-img" title="image3">
-						<img src="gallery_img/3.jpg" width="225" height="170"  alt="gallery" />
-						<div class="gallery-img-title">Title 3</div>
-					</div>
-					<div class="gallery-img" title="image4">
-						<img src="gallery_img/4.jpg" width="225" height="170"  alt="gallery" />
-						<div class="gallery-img-title">Title 4</div>
-					</div>
-					<div class="gallery-img" title="image5">
-						<img src="gallery_img/5.jpg" width="225" height="170"  alt="gallery" />
-						<div class="gallery-img-title">Title 5</div>
-					</div>
-					<div class="gallery-img" title="image6">
-						<img src="gallery_img/6.jpg" width="225" height="170"  alt="gallery" />
-						<div class="gallery-img-title">Title 6</div>
-					</div>
-					<div class="gallery-img" title="image7">
-						<img src="gallery_img/7.jpg" width="225" height="170"  alt="gallery" />
-						<div class="gallery-img-title">Title 7</div>
-					</div>
-					<div class="gallery-img" title="image8">
-						<img src="gallery_img/8.jpg" width="225" height="170"  alt="gallery" />
-						<div class="gallery-img-title">Title 8</div>
-					</div>
-					<div class="gallery-img" title="image9">
-						<img src="gallery_img/9.jpg" width="225" height="170"  alt="gallery" />
-						<div class="gallery-img-title">Title 9</div>
-					</div>
+				<div class="mainwebsitecontent">
+					<form>
+						<div class="formrow">
+							<div class="formlable">Name :</div>
+							<div class="inputform"><input type="text" name="name" id="name" placeholder="Write Your  Name" required class="inputbox"></div>
+						</div>
+						<div class="formrow">
+							<div class="formlable">Password :</div>
+							<div class="inputform"><input type="Password" name="name" id="name" placeholder="Password" required class="inputbox" required></div>
+						</div>
+						<div class="formrow">
+							<div class="formlable">Gender :</div>
+							<div class="inputform">
+								<input type="radio" name="sex" id="male" class="" required>Male
+								<input type="radio" name="sex" id="male" class="" required>Female
+							</div>
+						</div>
+						<div class="formrow">
+							<div class="formlable">Contact No :</div>
+							<div class="inputform"><input type="text" name="contact" id="contact" class="inputbox" required></div>
+						</div>
+						<div class="formrow">
+							<div class="formlable">Country :</div>
+							<div class="inputform">
+								<select name="country" id="country" required>
+									<option value="">---Select---</option>
+									<option value="1">India</option>
+									<option value="2">US</option>
+									<option value="3">Uk</option>
+									<option value="4">Australia</option>
+									<option value="5">Dubai</option>
+								</select>
+							</div>
+						</div>
+						<div class="formrow">
+							<div class="formlable">State :</div>
+							<div class="inputform">
+								<select name="state" id="state" required>
+									<option value="">---Select---</option>
+									<option value="1">Bihar</option>
+									<option value="2">Rajsthan</option>
+									<option value="3">UP</option>
+									<option value="4">MP</option>
+									<option value="5">Gujrat</option>
+								</select>
+							</div>
+						</div>
+						<div class="formrow">
+							<div class="formlable">City :</div>
+							<div class="inputform">
+								<select name="city" id="city" required>
+									<option value="">---Select---</option>
+									<option value="1">Madhubani</option>
+									<option value="2">Darbhanga</option>
+									<option value="3">Jodhpur</option>
+									<option value="4">Vadodra</option>
+									<option value="5">Jaipur</option>
+								</select>
+							</div>
+						</div>
+						<div class="formrow">
+							<div class="formlable">Adress :</div>
+							<div class="inputform">
+								<textarea name="adress" id="adress" class="textarea" required></textarea>
+							</div>
+						</div>
+						<div class="formrow">
+							<div class="formlable">Email :</div>
+							<div class="inputform">
+								<input type="Email" name="email" id="email" class="inputbox" required>
+							</div>
+						</div>
+						<div class="formrow">
+							<div class="formlable">Enquiry :</div>
+							<div class="inputform">
+								<textarea name="enquiry" id="enquiry" class="textarea" required></textarea>
+							</div>
+						</div>
+						<div class="formrow">
+							<div class="formlable"><input type="submit" value="Send" class="button"></div>		
+						</div>
+					</form>
 				</div>
 			</div>
 		</div>
@@ -191,7 +237,7 @@
 				<div class="footer-contact">
 					<h2>Contact Info:</h2>				
 					<ul>
-						<li class="class="cont-details"">Call At: 9269698122</li>
+						<li class="cont-details">Call At: 9269698122</li>
 						<li>1st floor, Laxmi Tower,<br> Bhaskar Circle,<br> Ratanda, Raj - <br>Jodhpur(342001)</li>
 					</ul>
 					<ul id="social-links">
